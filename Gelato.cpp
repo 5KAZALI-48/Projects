@@ -1,11 +1,13 @@
 #include "NitroSnackMenuItem.h"
-#include "Gelato.h"
-
+#include "DragonBreath.h"
 #include <iostream>
 
-void Gelato::displayTransectionInfo()
+using namespace std;
+void DragonBreath::displayTransectionInfo()
 {
-	cout << endl << "Item Name: " << getItemName() << endl;
-	cout << "Quantity:" << getItemQuantity() << endl;
-	cout << "Price:" << getItemPrice() << endl << endl;
+	cout << endl << "\tItem Name: " << getItemName() << endl;
+	cout << "\tUnit Price:" << getItemPrice() << endl;
+	cout << "\t" << getItemQuantity() << " cups perchesed " << endl;
+	cout << "\tTotal Price: " << getItemPrice() *  getItemQuantity() << endl << endl;
+	
 }
