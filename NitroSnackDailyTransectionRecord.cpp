@@ -156,3 +156,20 @@ void displayDatabase()
 	}
 }
 
+void saveDailyTransections()
+{
+	time_t time_object = time(0);   // get time now
+	struct tm * now = localtime(&time_object);
+	char buffer[80];
+	strftime(buffer, 80, "%m-%d-%Y.csv", now);
+
+	ofstream todaysFile;
+	todaysFile.open(buffer);
+	
+	if (todaysFile.is_open())
+	{
+		cout << "\tDaily Database is Successfully Created " << endl;
+	}
+	
+ }
+
