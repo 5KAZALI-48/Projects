@@ -23,7 +23,6 @@ double calculateItemPrice(int, double);
 void newSale(string, int, double, MenuItem);
 void displayDatabase();
 
-
 Database *list = NULL;
 int main()
 {
@@ -78,7 +77,6 @@ void helper(char choice)
 	MenuItem itemType;
 	int itemNumberInput = 2;
 	
-
 	if (choice == '1')
 	{
 		system("cls");
@@ -111,6 +109,7 @@ void helper(char choice)
 		displayDatabase();
 	}
 }
+
 double calculateItemPrice(int quantity, double itemPrice)
 {
 	return (quantity * itemPrice);
